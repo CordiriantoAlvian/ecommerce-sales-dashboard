@@ -4,7 +4,7 @@
 
 Built by **Cordirianto Alvian** to turn an e-commerce dataset into an interactive sales reporting experience.
 
-**[Download the Power BI report and source data](https://github.com/CordiriantoAlvian/ecommerce-sales-dashboard/releases/latest)**
+**Project documentation is available below. The Power BI report and source-data release are prepared but not published yet.**
 
 ## Overview
 
@@ -61,15 +61,17 @@ The order file contains **138,116 unique orders** and **24,911 customers with or
 
 ## Open the dashboard
 
-1. Open the [latest release](https://github.com/CordiriantoAlvian/ecommerce-sales-dashboard/releases/latest).
-2. Download `E-Commerce-Sales-Dashboard.pbix` and open it in a current compatible version of **Power BI Desktop**.
+The following steps apply once the download files are published:
+
+1. Download `E-Commerce-Sales-Dashboard.pbix` from the project's release assets.
+2. Open it in a current compatible version of **Power BI Desktop**.
 3. Use the Product Category dropdown and Date Range slicer to explore the report.
 4. To refresh the data, download and extract `ecommerce-source-data.zip`, then use **Transform data → Data source settings** or the query Source steps to point the queries to your local CSV files.
 5. Keep the model table names `orders`, `order_items`, `customer_master`, and `product_catalog` when changing source paths, and check that the relationships still filter the charts as intended.
 
-The PBIX is the uploaded report, preserved byte-for-byte. The source-data ZIP contains the five supplied CSVs with duplicate-download suffixes removed from their filenames. These larger files are distributed as release assets.
+The PBIX is the uploaded report, preserved byte-for-byte. The source-data ZIP contains the five supplied CSVs with duplicate-download suffixes removed from their filenames. These larger files are prepared for distribution as release assets; that release has not been published.
 
-This repository provides a downloadable Power BI report; it does not yet include a published Power BI Service report link.
+The PBIX download is pending publication. This repository does not yet include a published Power BI Service report link.
 
 ## Model and metric documentation
 
@@ -88,7 +90,7 @@ These notes document the supplied report and data; this repository does not sile
 
 ## Reproduce the data checks
 
-After extracting the source-data ZIP, run with Python 3 (standard library only):
+Download the five CSVs from the Kaggle source (or extract the source-data ZIP after publication), then run with Python 3 (standard library only):
 
 ```bash
 python scripts/profile_data.py /path/to/extracted/csvs > data_profile.json
@@ -103,7 +105,7 @@ The script reports row counts, distinct keys, relationship coverage, currencies,
 | `README.md` | Project overview, dataset attribution, and usage instructions |
 | `docs/` | Model references, interpretation notes, visual inventory, and file checksums |
 | `scripts/profile_data.py` | Reproducible source-data profiling |
-| Releases | Original PBIX and the source-data ZIP |
+| [Release plan](docs/release-plan.md) | Prepared PBIX and source-data files; publication pending |
 
 ## Author
 

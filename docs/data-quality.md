@@ -38,4 +38,4 @@ The scatter plot's reference line is stored as `0.4298` (42.98%) and labeled `Ov
 
 ## Files and reproducibility
 
-The report and CSV release assets retain the supplied file bytes. CSV filenames have only been normalized to remove duplicate-download suffixes. Checksums are recorded in `release-checksums.sha256`. No data-cleaning corrections, currency conversions, status filters, or DAX changes were applied to the original report as part of repository creation.
+The prepared report and CSV ZIP retain the supplied file bytes; release publication is pending. CSV filenames have only been normalized to remove duplicate-download suffixes. Checksums are recorded in `release-checksums.sha256`. No data-cleaning corrections, currency conversions, status filters, or DAX changes were applied to the original report as part of repository creation.
