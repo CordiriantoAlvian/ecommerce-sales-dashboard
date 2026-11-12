@@ -1,0 +1,127 @@
+[
+  {
+    "visual_type": "cardVisual",
+    "fields": [
+      {
+        "role": "Data",
+        "field": "order_items.Total Net Sales"
+      }
+    ]
+  },
+  {
+    "visual_type": "cardVisual",
+    "fields": [
+      {
+        "role": "Data",
+        "field": "order_items.Total Orders"
+      }
+    ]
+  },
+  {
+    "visual_type": "cardVisual",
+    "fields": [
+      {
+        "role": "Data",
+        "field": "order_items.Total Profit"
+      }
+    ]
+  },
+  {
+    "visual_type": "cardVisual",
+    "fields": [
+      {
+        "role": "Data",
+        "field": "order_items.Average Order Value"
+      }
+    ]
+  },
+  {
+    "visual_type": "lineChart",
+    "fields": [
+      {
+        "role": "Category",
+        "field": "orders.Month Start"
+      },
+      {
+        "role": "Y",
+        "field": "order_items.Total Net Sales"
+      },
+      {
+        "role": "Y",
+        "field": "order_items.Total Profit"
+      }
+    ]
+  },
+  {
+    "visual_type": "textbox",
+    "fields": []
+  },
+  {
+    "visual_type": "clusteredBarChart",
+    "fields": [
+      {
+        "role": "Category",
+        "field": "product_catalog.product_category"
+      },
+      {
+        "role": "Y",
+        "field": "order_items.Total Net Sales"
+      }
+    ]
+  },
+  {
+    "visual_type": "slicer",
+    "fields": [
+      {
+        "role": "Values",
+        "field": "orders.order_date"
+      }
+    ]
+  },
+  {
+    "visual_type": "textbox",
+    "fields": []
+  },
+  {
+    "visual_type": "slicer",
+    "fields": [
+      {
+        "role": "Values",
+        "field": "product_catalog.product_category"
+      }
+    ]
+  },
+  {
+    "visual_type": "scatterChart",
+    "fields": [
+      {
+        "role": "Series",
+        "field": "product_catalog.product_category"
+      },
+      {
+        "role": "Tooltips",
+        "field": "order_items.Total Profit"
+      },
+      {
+        "role": "Tooltips",
+        "field": "order_items.Total Orders"
+      },
+      {
+        "role": "X",
+        "field": "order_items.Total Net Sales"
+      },
+      {
+        "role": "Y",
+        "field": "order_items.Profit Margin"
+      }
+    ]
+  },
+  {
+    "visual_type": "container",
+    "fields": []
+  },
+  {
+    "visual_type": "textbox",
+    "fields": []
+  }
+]

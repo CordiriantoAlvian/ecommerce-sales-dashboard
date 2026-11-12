@@ -1,0 +1,11 @@
+.env
+.env.*
+__pycache__/
+*.pyc
+.DS_Store
+data/
+*.pbix
+*.zip
+data_profile.json
+**/.pbi/localSettings.json
+**/.pbi/cache.abf

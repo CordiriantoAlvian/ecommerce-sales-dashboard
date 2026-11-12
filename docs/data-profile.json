@@ -1,0 +1,58 @@
+{
+  "rows": {
+    "orders": 138116,
+    "order_items": 397569,
+    "customer_master": 25000,
+    "product_catalog": 1175
+  },
+  "distinct": {
+    "orders": 138116,
+    "customers_with_orders": 24911,
+    "products_in_order_items": 1175,
+    "categories": 15
+  },
+  "date_range": {
+    "from": "2021-01-01",
+    "to": "2025-12-31"
+  },
+  "duplicate_primary_keys": {
+    "orders": 0,
+    "customers": 0,
+    "products": 0
+  },
+  "missing_parent_rows": {
+    "orders_without_customer": 0,
+    "lines_without_order": 0,
+    "lines_without_product": 0
+  },
+  "currencies": {
+    "AED": 4172,
+    "AUD": 6794,
+    "CAD": 7015,
+    "EUR": 11593,
+    "GBP": 20235,
+    "INR": 5707,
+    "USD": 82600
+  },
+  "order_statuses": {
+    "Cancelled": 8398,
+    "Completed": 113559,
+    "Pending": 6697,
+    "Returned": 9462
+  },
+  "unconverted_numeric_sums": {
+    "orders": {
+      "net_sales": "177134263.740000000017505",
+      "profit": "76146395.76000000002974730"
+    },
+    "order_items": {
+      "net_sales": "192398877.29",
+      "profit": "82698038.55"
+    }
+  },
+  "notes": [
+    "Numeric sums span multiple currencies and all order statuses.",
+    "Order-level and order-item sums are kept separate.",
+    "This profile does not execute the PBIX semantic model."
+  ]
+}
